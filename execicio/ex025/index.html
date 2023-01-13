@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.php" method="post">
+        <p id="f1"><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p id="f2"><label for="iSobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="iSobrenome"></p>
+        <p id="f3"><input type="submit" value="Envia"></p>
+        <p> Senha <input type="password"></p>
+        <p>valo <input type="number" name="valor" id="ivalor" min="0" max="10000" placeholder="0.00 a 10000" step="0.1" required 
+            ></p>
+        <p>hora <input type="time" name="hora" id="ihora"></p>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario (parte2)</h1>
+   <fieldset>
+    <legend> Usando propriedade option</legend>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <p>
+        <label for="iest">Estado</label>
+    <select name="estado" id="iest">
+
+        <optgroup label="Sul">
+           
+           
+
+            <option value="Pe" selected>Pernambuco</option>
+            <option value="Al">Alagoas</option>
+            <option value="Sp">São Paulo</option>
+        </optgroup>
+        <optgroup label="Nordeste">
+           
+           
+
+            <option value="Pe">Pernambuco</option>
+            <option value="Al">Alagoas</option>
+           
+        </optgroup>
+
+    <option value="Pernambuco"></option>
+    <option value="Alagoas"></option>
+    <option value="São Paulo"></option>
+    </p>
+</select>
+    <p>
+        <label for="iprof">Profições</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+         <datalist id="lstprof">
+
+
+            <option>vendedor</option>
+            <option value="tec">Tecnoco</option>
+         </datalist>
+           
+
+    </p>
+
+    <p>
+        <label for="imsg">Mensaguen</label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite aqui sua mensaguen"></textarea>
+    </p>
+    <p>
+        <label for="imsg">Mensaguen</label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite aqui sua mensaguen">Compre porque eu já comecei kkk</textarea>
+    </p>
+
+
+
+  
+
+
+
+
+
+
+
+    </form>
+
+
+</fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+      
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+   <fieldset>
+    <legend> Dados pessoais</legend>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p><label for="inome">Nome</label>
+        <input type="text" name="nome"id="inome" minlength="5" maxlength="20" required>
+        </p>
+        <p>
+            <label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail" autocomplete="email">
+        
+        </p>
+        <p>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="tel" id="itel" autocomplete="tel" 
+            pattern="^\(d{2}\)\d{5,5}-\d{a}$" required placeholder="(xx)xxxxx-xxxx">
+
+
+        </p>
+   </fieldset>
+   <fieldset>
+    <legend>Sexo</legend>
+    <input type="radio" name="sexo" id="iba" checked><label for="iba">caxa marcada</label><br>
+    <input type="radio" name="sexo" id="iba2" value="M"><label for="iba2">Masculino</label>
+    <input type="radio" name="sexo" id="iba3" value="F"><label for="iba3">Feminino</label>
+    
+
+   </fieldset>
+
+   <fieldset>
+    <legend>Esportes favorito</legend>
+    <input type="checkbox" name="ba" id="iba" checked><label for="iba">caxa marcada</label><br>
+    <input type="checkbox" name="ba" id="iba"><label for="iba">Basquete</label>
+    <input type="checkbox" name="ba" id="iba">Futbol <br>
+    <input type="checkbox" name="ba" id="iba">vole
+    <input type="checkbox" name="ba" id="ibo"><label for="ibo">Bolinha de gud</label>
+
+   </fieldset>
+</fieldset>
+<fieldset>
+ <legend>Mercanismos e funçoes</legend>
+ <p> 
+    <label for="icor">cor:</label>
+    <input type="color"name="cor"id="icor"value="#00ff00">
+
+</p>
+<p>
+    <label for="inivel">Nivel</label>
+    <input type="range" name="nivel" id="inivel" min="1" max="100" value="10">
+
+</p>
+<p>
+    <label for="ifoto">Este e o melhor escolha uma foto lembrese de por o protocolo de transmição em (post)</label>
+    <input type="file" name="foto" id="ifoto">
+</p>
+ 
+
+</fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+      
+    </form>
+    
+</body>
+</html>
